@@ -1,5 +1,5 @@
 # Leetcode 2020
-**100. Same Tree**
+# 100. Same Tree
 Given two binary trees, write a function to check if they are the same or not.
 
     def isSameTree(self, p: TreeNode, q: TreeNode) -> bool:
@@ -11,7 +11,7 @@ Given two binary trees, write a function to check if they are the same or not.
         return False
 ----------
 
-**101. Symmetric Tree**
+# 101. Symmetric Tree
 Given a binary tree, check whether it is a mirror of itself (ie, symmetric around its center).
 
     def isSymmetric(self, root: TreeNode) -> bool:
@@ -27,7 +27,7 @@ Given a binary tree, check whether it is a mirror of itself (ie, symmetric aroun
       return self.isMirror(left.left,right.right) and self.isMirror(left.right,right.left)
 ----------
 
-**102. Binary Tree Level Order Traversal**
+# 102. Binary Tree Level Order Traversal
 Given a binary tree, return the *level order* traversal of its nodes' values. (ie, from left to right, level by level).
 
     from collections import deque
@@ -51,7 +51,7 @@ Given a binary tree, return the *level order* traversal of its nodes' values. (i
       return res
 ----------
 
-**103. Binary Tree Zigzag Level Order Traversal**
+# 103. Binary Tree Zigzag Level Order Traversal
 Given a binary tree, return the *zigzag level order* traversal of its nodes' values. (ie, from left to right, then right to left for the next level and alternate between).
 
     def zigzagLevelOrder(self, root: TreeNode) -> List[List[int]]:
@@ -77,7 +77,7 @@ Given a binary tree, return the *zigzag level order* traversal of its nodes' val
       return res
 ----------
 
-**112. Path Sum**
+# 112. Path Sum
 Given a binary tree and a sum, determine if the tree has a root-to-leaf path such that adding up all the values along the path equals the given sum.
 
     def hasPathSum(self, root: TreeNode, sum: int) -> bool:
@@ -89,7 +89,7 @@ Given a binary tree and a sum, determine if the tree has a root-to-leaf path suc
       return self.hasPathSum(root.left, sum) or self.hasPathSum(root.right, sum)
 ----------
 
-**113. Path Sum II**
+# 113. Path Sum II
 Given a binary tree and a sum, find all root-to-leaf paths where each path's sum equals the given sum.
 
     def pathSum(self, root: TreeNode, sum: int) -> List[List[int]]:
@@ -102,7 +102,7 @@ Given a binary tree and a sum, find all root-to-leaf paths where each path's sum
       return [[root.val] + i for i in subSum]
 ----------
 
-**543. Diameter of Binary Tree**
+# 543. Diameter of Binary Tree
 Given a binary tree, you need to compute the length of the diameter of the tree. The diameter of a binary tree is the length of the **longest** path between any two nodes in a tree. This path may or may not pass through the root.
 
     '''
@@ -127,7 +127,7 @@ Given a binary tree, you need to compute the length of the diameter of the tree.
       return max(left, right) + 1
 ----------
 
-**572. Subtree of Another Tree**
+# 572. Subtree of Another Tree
 Given two non-empty binary trees **s** and **t**, check whether tree **t** has exactly the same structure and node values with a subtree of **s**. A subtree of **s** is a tree consists of a node in **s** and all of this node's descendants. The tree **s** could also be considered as a subtree of itself.
 
     def isSubtree(self, s: TreeNode, t: TreeNode) -> bool:
@@ -147,7 +147,7 @@ Given two non-empty binary trees **s** and **t**, check whether tree **t** has e
       return tree1.val == tree2.val and self.isIdentical(tree1.left, tree2.left) and self.isIdentical(tree1.right, tree2.right)
 ----------
 
-**173. Binary Search Tree Iterator**
+# 173. Binary Search Tree Iterator
 Implement an iterator over a binary search tree (BST). Your iterator will be initialized with the root node of a BST.
 Calling `next()` will return the next smallest number in the BST.
 
@@ -191,7 +191,7 @@ Calling `next()` will return the next smallest number in the BST.
           return len(self.stack) > 0
 ----------
 
-**109. Convert Sorted List to Binary Search Tree**
+# 109. Convert Sorted List to Binary Search Tree
 Given a singly linked list where elements are sorted in ascending order, convert it to a height balanced BST.
 For this problem, a height-balanced binary tree is defined as a binary tree in which the depth of the two subtrees of *every* node never differ by more than 1.
 
@@ -219,7 +219,7 @@ For this problem, a height-balanced binary tree is defined as a binary tree in w
         return root
 ----------
 
-**99. Recover Binary Search Tree**
+# 99. Recover Binary Search Tree
 Two elements of a binary search tree (BST) are swapped by mistake.
 Recover the tree without changing its structure.
 
@@ -246,7 +246,7 @@ Recover the tree without changing its structure.
         x.val, y.val = y.val, x.val
 ----------
 
-**450. Delete Node in a BST**
+# 450. Delete Node in a BST
 Given a root node reference of a BST and a key, delete the node with the given key in the BST. Return the root node reference (possibly updated) of the BST.
 Basically, the deletion can be divided into two stages:
 
@@ -286,7 +286,7 @@ Basically, the deletion can be divided into two stages:
         return root.val
 ----------
 
-**91. Decode Ways**
+# 91. Decode Ways
 A message containing letters from `A-Z` is being encoded to numbers using the following mapping:
 
     'A' -> 1
@@ -316,7 +316,7 @@ Given a **non-empty** string containing only digits, determine the total number 
         return dp[-1]
 ----------
 
-**62. Unique Paths**
+# 62. Unique Paths
 A robot is located at the top-left corner of a *m* x *n* grid (marked 'Start' in the diagram below).
 The robot can only move either down or right at any point in time. The robot is trying to reach the bottom-right corner of the grid (marked 'Finish' in the diagram below).
 How many possible unique paths are there?
@@ -331,7 +331,7 @@ How many possible unique paths are there?
         return cur[-1]
 ----------
 
-**116. Populating Next Right Pointers in Each Node**
+# 116. Populating Next Right Pointers in Each Node
 You are given a **perfect binary tree** where all leaves are on the same level, and every parent has two children. The binary tree has the following definition:
 
     struct Node {
@@ -378,7 +378,7 @@ Initially, all next pointers are set to `NULL`.
           return root
 ----------
 
-**76. Minimum Window Substring**
+# 76. Minimum Window Substring
 Given a string S and a string T, find the minimum window in S which will contain all the characters in T in complexity O(n).
 
     **Example:**
@@ -418,7 +418,7 @@ Given a string S and a string T, find the minimum window in S which will contain
         return s[left: right]
 ----------
 
-**560. Subarray Sum Equals K**
+# 560. Subarray Sum Equals K
 Given an array of integers and an integer **k**, you need to find the total number of continuous subarrays whose sum equals to **k**.
 
     **Example 1:**
