@@ -1,15 +1,20 @@
 * Introduction
 
-* Leetcode
-    * [Binary Search](/leetcode/binarysearch.md)
-    * [Stack & Queue](/leetcode/stackqueue.md)
+* Algorithm
+    * [Leetcode](/algorithm/Leetcode.md)
+	* [Binary Search](/algorithm/binarysearch.md)
+    * [Stack & Queue](/algorithm/stackqueue.md)
 
 * Database
-    * [MongoDB](/leetcode/binarysearch.md)
+    * [MongoDB](/database/mongodb.md)
 
 * 系统设计
 
 * 项目总结
-	* [Education System]()
-	* [Amazon Clone]()
-	* [Recommender System]()
+	* [Education System](/projects/education.md)
+	* [Amazon Clone](/projects/amazonClone.md)
+	* [Recommender System](/projects/recSys.md)
+
+* Resume
+	* [Resume](/resume/resume.md)
+	* [Experience](/resume/experience.md)

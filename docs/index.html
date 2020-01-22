@@ -9,18 +9,29 @@
   <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css">
 </head>
 <body>
-  <div id="app"></div>
+  <div id="app">Loading...</div>
   <script>
     window.$docsify = {
       name: 'Hazel Bing',
-      repo: '',
-      maxLevel: 3,
+      pagination: {
+        previousText: '上一章节',
+        nextText: '下一章节',
+        crossChapter: true,
+        crossChapterText: true,
+      },
+      mergeNavbar: true,
+      maxLevel: 4,
+      subMaxLevel: 2,
       coverpage: true,
       loadNavbar: true,
       loadSidebar: true,
-      
+      auto2top: true,
+      formatUpdated: '{MM}/{DD} {HH}:{mm}'      
     }
   </script>
   <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
+  <script src="//unpkg.com/docsify-copy-code"></script>
+  <script src="//unpkg.com/docsify-pagination/dist/docsify-pagination.min.js"></script>
+
 </body>
 </html>
